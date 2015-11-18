@@ -10,6 +10,11 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
+
+- (void)alarmNotification: (NSDate *) alarmDate;
+- (IBAction)setAlarm:(id)sender;
+- (IBAction)cancelAlarm:(id)sender;
 
 @end
 
